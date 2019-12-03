@@ -1,6 +1,8 @@
 package com.gavin.sh.websocket;
 
 import com.gavin.sh.model.Device;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -29,7 +31,8 @@ import java.util.logging.Logger;
 @ServerEndpoint("/actions")
 public class DeviceWebSocketServer {
 
-    @Inject
+    @Autowired
+    @Qualifier("sessionHandler")
     private DeviceSessionHandler sessionHandler;
 
     @OnOpen

@@ -1,6 +1,7 @@
 package com.gavin.sh.websocket;
 
 import com.gavin.sh.model.Device;
+import org.springframework.stereotype.Component;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.json.JsonObject;
@@ -23,6 +24,7 @@ import java.util.logging.Logger;
  * @since [产品/模块版本] （可选）
  */
 @ApplicationScoped
+@Component("sessionHandler")
 public class DeviceSessionHandler {
 
     private int deviceId = 0;
