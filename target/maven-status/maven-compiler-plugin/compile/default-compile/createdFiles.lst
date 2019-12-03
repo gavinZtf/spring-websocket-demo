@@ -1,0 +1,3 @@
+com\gavin\sh\websocket\DeviceWebSocketServer.class
+com\gavin\sh\model\Device.class
+com\gavin\sh\websocket\DeviceSessionHandler.class
